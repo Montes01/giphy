@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans Ms;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+
+}
+.fullPage{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    & .searchBar{
+        margin-top: 3%;
+        box-sizing: content-box;
+        height: 20%;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+
+        & .principalTittle{
+            font-size: 35px;
+        }
+
+        & #giphSearchBar
+        {
+            margin-top: 3%;
+            padding: 5px;
+            width: 80%; 
+        }
+    }
+
+    & #searchedGiphs{
+        margin-top: 5%;
+        height: 70%;
+        display: none;
+        flex-direction: Row;
+        flex-wrap: wrap;
+
+        & .eachGiph{
+            display: flex;
+            flex-direction: column;
+            margin: 2%;
+            width: 16%;
+        }
+    }
+
+
+    & .giphs{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        & .trending{
+            
+        margin-top: 5%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: Column;
+        flex-wrap: wrap;
+        height: 50%;
+
+            & #trendingList{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 100%;
+            }
+            & .eachGiph{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2%;
+                text-align: center;
+            }
+        }
+        & .mostSearched{
+            & .trendingList{
+                display: flex;
+                margin: 2%;
+                width: 16%;
+            }
+
+
+
+            height: 50%;
+        }
+    }
+}
